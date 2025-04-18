@@ -91,7 +91,7 @@ npm install @react-native-async-storage/async-storage
 <img src="./SOS.png" alt="SOS Activation" width="300"/>
 
 ### New Features UI  
-<img src="./New_features.png" alt="New Features" width="300"/>
+<img src="./New_Features.png" alt="New Features" width="300"/>
 
 ### Expo Start  
 <img src="./Start_Expo.png" alt="Expo Start" width="300"/>

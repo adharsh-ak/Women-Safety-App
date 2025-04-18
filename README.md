@@ -82,21 +82,22 @@ npm install @react-native-async-storage/async-storage
 ---
 
 ## 📸 Screenshots
+---
 
-#### Home Screen  
-![Home](./Home.png)
+### Home Screen  
+<img src="./Home.png" alt="Home" width="300"/>
 
-#### SOS Activation  
-![SOS](./SOS.png)
+### SOS Activation  
+<img src="./SOS.png" alt="SOS Activation" width="300"/>
 
-#### New Features UI  
-![New Features](./New_features.png)
+### New Features UI  
+<img src="./New_features.png" alt="New Features" width="300"/>
 
-#### Expo Start  
-![Expo Start](./Start_Expo.png)
+### Expo Start  
+<img src="./Start_Expo.png" alt="Expo Start" width="300"/>
 
-#### Desktop Screenshot  
-![Desktop View](./image.png)
+### Desktop Screenshot  
+<img src="./image.png" alt="Desktop Screenshot" width="300"/>
 
 ---
 

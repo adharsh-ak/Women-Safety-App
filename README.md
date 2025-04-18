@@ -79,6 +79,32 @@ npm install @react-native-async-storage/async-storage
 
 ---
 
+---
+
+## 📸 Screenshots
+
+#### Home Screen  
+![Home](./Home.png)
+
+#### SOS Activation  
+![SOS](./SOS.png)
+
+#### New Features UI  
+![New Features](./New_features.png)
+
+#### Expo Start  
+![Expo Start](./Start_Expo.png)
+
+#### Desktop Screenshot  
+![Desktop View](./image.png)
+
+---
+
+## 🎬 Demo Video
+
+[Click here to watch the full screen recording of the app in action](./output.mp4)
+
+
 ## Join the community
 
 Join the community of developers creating universal apps.

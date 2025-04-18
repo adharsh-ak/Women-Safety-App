@@ -1,50 +1,93 @@
-# Welcome to your Expo app 👋
+# 🚨 Safe Her - Women Safety Emergency App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![Expo](https://img.shields.io/badge/Expo-48C9B0?logo=expo&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS-blue)
+![License](https://img.shields.io/github/license/your-username/safe-her)
+![Build With React Native](https://img.shields.io/badge/Built%20With-React%20Native-61DAFB?logo=react)
 
-## Get started
+**Safe Her** is a purpose-built React Native application using Expo that empowers women to stay safe during emergencies. With just a shake of the phone or a long press, the app can instantly alert trusted contacts with the user’s live location, capture real-time media, and initiate emergency communication.
 
-1. Install dependencies
+---
 
+## 🌟 Mission
+
+**Empowering women's safety through technology.**  
+Safe Her aims to offer a reliable, quick-response safety companion designed specifically for women, especially in distress situations.
+
+---
+
+## 📱 Features
+
+- 📍 **Real-time GPS tracking** for instant location updates  
+- 🗺️ **Live map display** of user’s current position  
+- 🚨 **Emergency SOS trigger** via phone shake or long-press  
+- 📸 **Camera capture** for collecting visual evidence  
+- 📞 **Auto SMS and emergency call** to trusted contacts  
+- 💾 **Local storage** of emergency contacts using AsyncStorage  
+- ⚠️ **Modular design** for future features like Safe Zones and Contact Management
+
+---
+
+## 🛠 Required Libraries
+
+Install the following libraries to get started:
+
+```bash
+npm install react-native-maps
+npm install expo-location
+npm install expo-sensors
+npm install expo-router
+npm install @react-native-async-storage/async-storage
+```
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/safe-her.git
+   cd safe-her
+   ```
+
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. **Run the Expo server**
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. **Open the app**
+   - Scan the QR code with **Expo Go** (Android/iOS)
+   - Or use an **emulator/simulator**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+5. **Grant required permissions**
+   - Location  
+   - Camera  
+   - SMS and Phone (for emergency actions)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## ⚙️ Technical Notes
 
-When you're ready, run:
+- **Shake detection** triggers at acceleration > `2.5`
+- **Emergency message** includes a **Google Maps location link**
+- **Trusted contacts** stored in AsyncStorage under key: `trustedContacts`
+- **Linking API** is used for SMS and phone calls
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
 ## Join the community
 
-Join our community of developers creating universal apps.
+Join the community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+## 📄 License
+
+This project is licensed under the **MIT License**.

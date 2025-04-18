@@ -1,39 +1,59 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
-import 'react-native-reanimated';
-
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-// Prevent the splash screen from auto-hiding before asset loading is complete.
-SplashScreen.preventAutoHideAsync();
+import { Stack } from "expo-router";
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-  });
-
-  useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [loaded]);
-
-  if (!loaded) {
-    return null;
-  }
-
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <Stack>
+      {/* Home Screen (Main Page) */}
+      <Stack.Screen 
+        name="index" 
+        options={{ 
+          title: "Safe-Her",
+          headerStyle: { backgroundColor: "#ff4757" },
+          headerTintColor: "#fff",
+          headerTitleStyle: { fontWeight: "bold", fontSize: 24 },
+        }} 
+      />
+
+      {/* Camera Screen */}
+      <Stack.Screen 
+        name="screens/CameraScreen" 
+        options={{ 
+          title: "Camera",
+          headerStyle: { backgroundColor: "#ff4757" },
+          headerTintColor: "#fff",
+        }} 
+      />
+
+      {/* Location Screen (Future Enhancement) */}
+      <Stack.Screen 
+        name="screens/LocationScreen" 
+        options={{ 
+          title: "Live Location",
+          headerStyle: { backgroundColor: "#ff4757" },
+          headerTintColor: "#fff",
+        }} 
+      />
+
+      {/* Trusted Contacts Screen */}
+      <Stack.Screen 
+        name="screens/ContactsScreen" 
+        options={{ 
+          title: "Trusted Contacts",
+          headerStyle: { backgroundColor: "#ff4757" },
+          headerTintColor: "#fff",
+        }} 
+      />
+
+      {/* Settings Screen */}
+      <Stack.Screen 
+        name="screens/SettingsScreen" 
+        options={{ 
+          title: "Settings",
+          headerStyle: { backgroundColor: "#ff4757" },
+          headerTintColor: "#fff",
+        }} 
+      />
+    </Stack>
   );
 }
+

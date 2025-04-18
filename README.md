@@ -2,7 +2,6 @@
 
 ![Expo](https://img.shields.io/badge/Expo-48C9B0?logo=expo&logoColor=white)
 ![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS-blue)
-![License](https://img.shields.io/github/license/your-username/safe-her)
 ![Build With React Native](https://img.shields.io/badge/Built%20With-React%20Native-61DAFB?logo=react)
 
 **Safe Her** is a purpose-built React Native application using Expo that empowers women to stay safe during emergencies. With just a shake of the phone or a long press, the app can instantly alert trusted contacts with the user’s live location, capture real-time media, and initiate emergency communication.

@@ -45,7 +45,7 @@ npm install @react-native-async-storage/async-storage
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/safe-her.git
+   git clone https://github.com/adharsh-ak/safe-her.git
    cd safe-her
    ```
 
@@ -110,7 +110,7 @@ npm install @react-native-async-storage/async-storage
 
 Join the community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Expo on GitHub](https://github.com/expo/expo): View open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
 
 
